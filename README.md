@@ -6,4 +6,5 @@
 
 
 # log
+2013-03-07  ghnjk add dfamaker and lexical.
 2013-03-06  ghnjk Create jcc Respotory.
