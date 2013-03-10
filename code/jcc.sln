@@ -7,8 +7,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DFAmaker", "DFAmaker\DFAmak
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lexical", "lexical\lexical.vcxproj", "{B2E9D285-7DF9-4EFF-843B-318B5AF9A9A9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "grammer_tool_LL_1_cheker", "grammer_tool_LL_1_cheker\grammer_tool_LL_1_cheker.vcxproj", "{D9312B84-7E3C-479B-A554-5CFA4B4BE270}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
