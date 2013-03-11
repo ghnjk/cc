@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 c complier  - LRmaker
 author:ghnjk
 time:2013-3
@@ -15,15 +15,15 @@ time:2013-3
 using namespace std;
 map<string,int>signmap;
 int getSymbolId(string &name);
-class GrammerSymbol{			///ÎÄ·¨·ûºÅ
+class GrammerSymbol{			///æ–‡æ³•ç¬¦å·
 public:
-	vector< vector<int> > pros;	//²úÉúÊ½ÁĞ±í
-	int id;						//·ûºÅID
-	string name;				//·ûºÅÃû³Æ
-	bool isTerminal;			//ÊÇ·ñÎªÖÕ½á·û
-	set<int>		first;		//first¼¯ºÏ
-	set<int>		follow;		//follow¼¯ºÏ
-	int color;					//Éú³ÉÊ±ÓÃµÄ±äÁ¿
+	vector< vector<int> > pros;	//äº§ç”Ÿå¼åˆ—è¡¨
+	int id;						//ç¬¦å·ID
+	string name;				//ç¬¦å·åç§°
+	bool isTerminal;			//æ˜¯å¦ä¸ºç»ˆç»“ç¬¦
+	set<int>		first;		//firsté›†åˆ
+	set<int>		follow;		//followé›†åˆ
+	int color;					//ç”Ÿæˆæ—¶ç”¨çš„å˜é‡
 	bool scanf(){
 		string buf;
 		char str[2048];
@@ -122,7 +122,7 @@ bool genFollow(){
 		allcnt+=grammer[i].follow.size();
 	vector<int> * pVec;
 	///
-	///Îª¿ªÊ¼·ÇÖÕ½á·ûÌí¼ÓEOF±ê¼Ç
+	///ä¸ºå¼€å§‹éç»ˆç»“ç¬¦æ·»åŠ EOFæ ‡è®°
 	grammer[eofID+1].follow.insert(eofID);
 	///
 	for(int ii=0;ii<signmap.size();ii++){
